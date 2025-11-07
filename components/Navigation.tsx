@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Home, Plus, TrendingUp } from "lucide-react";
+import { Home, TrendingUp } from "lucide-react";
 import Link from "next/link";
 
 export function Navigation() {
@@ -31,7 +31,7 @@ export function Navigation() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <Button asChild>
+            {/* <Button asChild>
               <Link
                 href="/transactions/add"
                 className="flex items-center gap-2"
@@ -39,11 +39,10 @@ export function Navigation() {
                 <Plus className="h-4 w-4" />
                 <span className="hidden sm:inline">Add Transaction</span>
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
     </nav>
   );
 }
-

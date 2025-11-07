@@ -145,7 +145,7 @@ export default function EditTransactionPage() {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              The transaction you're looking for doesn't exist.
+              The transaction you&apos;re looking for doesn&apos;t exist.
             </p>
           </CardContent>
           <CardFooter>
@@ -300,4 +300,3 @@ export default function EditTransactionPage() {
     </div>
   );
 }
-

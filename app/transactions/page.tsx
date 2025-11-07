@@ -1,6 +1,6 @@
 import { TransactionList } from "@/components/transactions/TransactionList";
 import { Button } from "@/components/ui/button";
-import { Plus } from "lucide-react";
+import { ArrowLeft, Plus } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -19,12 +19,20 @@ export default function TransactionsPage() {
             View and manage your transactions
           </p>
         </div>
-        <Button asChild>
-          <Link href="/transactions/add">
-            <Plus className="w-4 h-4 mr-2" />
-            Add Transaction
-          </Link>
-        </Button>
+        <div className="flex space-x-2">
+          <Button asChild variant="outline">
+            <Link href="/">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Dashboard
+            </Link>
+          </Button>
+          <Button asChild>
+            <Link href="/transactions/add">
+              <Plus className="w-4 h-4 mr-2" />
+              Add Transaction
+            </Link>
+          </Button>
+        </div>
       </div>
 
       <TransactionList />

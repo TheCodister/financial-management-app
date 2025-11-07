@@ -44,7 +44,7 @@ export function TrendChart({
             <LineChart data={chartData}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="date" />
-              <YAxis />
+              <YAxis width="auto" />
               <Tooltip
                 formatter={(value: number) => formatCurrency(value)}
                 labelFormatter={(label) => label}
@@ -71,4 +71,3 @@ export function TrendChart({
     </Card>
   );
 }
-
