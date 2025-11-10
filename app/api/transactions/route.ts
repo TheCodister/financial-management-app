@@ -38,6 +38,8 @@ export async function GET(request: NextRequest) {
 
     const totalPages = Math.max(1, Math.ceil(total / limit));
 
+    console.log(transactions);
+
     return NextResponse.json({ transactions, total, page, totalPages });
   } catch (error) {
     console.error(error);

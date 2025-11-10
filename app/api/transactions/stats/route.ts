@@ -71,6 +71,14 @@ export async function GET(request: NextRequest) {
       .sort()
       .map((date) => ({ date, ...dailyMap[date] }));
 
+    // console.log({
+    //   totalIncome,
+    //   totalExpenses,
+    //   transactionCount,
+    //   byCategory,
+    //   trend,
+    // });
+
     return NextResponse.json({
       totals: {
         totalIncome,

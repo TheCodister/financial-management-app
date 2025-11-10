@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Home, TrendingUp } from "lucide-react";
+import { Home, MessageCircle, TrendingUp } from "lucide-react";
 import Link from "next/link";
 
 export function Navigation() {
@@ -26,6 +26,12 @@ export function Navigation() {
                 <Link href="/transactions" className="flex items-center gap-2">
                   <TrendingUp className="h-4 w-4" />
                   Transactions
+                </Link>
+              </Button>
+              <Button variant="ghost" asChild>
+                <Link href="/chat" className="flex items-center gap-2">
+                  <MessageCircle className="h-4 w-4" />
+                  AI Chat
                 </Link>
               </Button>
             </div>
